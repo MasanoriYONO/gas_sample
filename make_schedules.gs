@@ -30,7 +30,7 @@ function modifyEvent(e) {
   destSheet.getRange(last_row + 1, 1).setValue(startTime);
   destSheet.getRange(last_row + 1, 2).setValue(endTime);
   destSheet.getRange(last_row + 1, 3).setValue(title);
-  let description = `入力日時: ${timestamp}`;
+  let description = `入力日時やカレンダーの説明: ${timestamp}`;
   let cal_location = '施設名サンプル';
 
   let options = {
