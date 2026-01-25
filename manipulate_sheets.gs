@@ -1,7 +1,7 @@
 var listSheetName = 'detail_1';
 var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 var templateSheet = spreadsheet.getSheetByName(listSheetName);
-const faceSheetURL = "https://docs.google.com/spreadsheets/d/abcdefghijk123lmnopqrstuVwXyz456zymkiosample/edit";
+const faceSheetURL = "https://docs.google.com/spreadsheets/d/set_google_spreadsheet_id_to_this_value_____/edit";
 
 function copySheets() {
   var faceSheetRow = 6;
