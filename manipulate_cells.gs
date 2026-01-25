@@ -2,7 +2,7 @@
 https://docs.google.com/spreadsheets/d/abcdefghijk123lmnopqrstuVwXyz456zymkiosample/edit
 の /d/ から/edit の間を指定する。
 */
-var entrylist_SheetID = 'abcdefghijk123lmnopqrstuVwXyz456zymkiosample';
+var entrylist_SheetID = 'set_google_spreadsheet_id_to_this_value_____';
 // これでもIDを取得可能だけれども、複数のシートを扱う場合は
 // アクティブなシートを切り替える必要があるため、他のシートも操作する場合にはお勧めできない。
 //var entrylist_SheetID = SpreadsheetApp.getActiveSpreadsheet().getId();
