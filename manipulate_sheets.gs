@@ -29,7 +29,7 @@ function copySheetsLookAtLocal() {
   
 }
 
-function delSheetTest() {
+function removeSheets() {
   for(var i=2; i <= 16; i++){
     let delSheetName = "detail_" + i.toString();
     let delSheet = spreadsheet.getSheetByName(delSheetName);
