@@ -20,13 +20,16 @@ function makeOrder() {
 
   last_row = destSheet.getLastRow();
   Logger.log("last_row:" + last_row);
+  // 入力フォームの値を参照する式をセルに代入。
   destSheet.getRange(last_row + 1, 1).setFormula("=Form_Responses[タイムスタンプ]");
   destSheet.getRange(last_row + 1, 2).setFormula("=Form_Responses[書類名]");
   destSheet.getRange(last_row + 1, 3).setFormula("=Form_Responses[在庫数]");
+  // 在庫目安のシート一覧から在庫目安量を引きあてるスプレッドシート関数をセルに代入。
   destSheet.getRange(last_row + 1, 4).setFormula("=xlookup(B" +  (last_row+1) + 
         ",needs!$A$2:$A$47,needs!$B$2:$B$47,\"not found.\",0,1)" );
   destSheet.getRange(last_row + 1, 5).setFormula("=C" + (last_row+1) 
         + "-D" + (last_row+1));
+  // 在庫数が目安量を下回っている場合は必要数を10刻みで発注、上回っている場合は空白、というスプレッドシート関数の代入
   destSheet.getRange(last_row + 1, 6).setFormula("=if(E" + (last_row+1) + "<0, ceiling(abs(E"
         + (last_row+1) +"),10),\"\")");
 }
