@@ -2,7 +2,7 @@ var listSheetName = 'detail_1';
 var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 var templateSheet = spreadsheet.getSheetByName(listSheetName);
 const faceSheetURL = "https://docs.google.com/spreadsheets/d/set_google_spreadsheet_id_to_this_value_____/edit";
-
+// 他のシートを参照する場合。
 function copySheets() {
   var faceSheetRow = 6;
   for(var i=2; i <= 16; i++){
@@ -15,7 +15,7 @@ function copySheets() {
   }
   
 }
-
+// アクティブなシートに元データをコピーしたシートが存在する場合。
 function copySheetsLookAtLocal() {
   var faceSheetRow = 6;
   for(var i=2; i <= 16; i++){
@@ -29,6 +29,7 @@ function copySheetsLookAtLocal() {
   
 }
 
+// テンプレートのシート以外を一括削除する。
 function removeSheets() {
   for(var i=2; i <= 16; i++){
     let delSheetName = "detail_" + i.toString();
