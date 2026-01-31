@@ -13,4 +13,6 @@ Googleで「GAS　認証　実行」などのキーワードで検索すると�
 
 [こちらのページ](https://auto-worker.com/blog/?p=609)
 
+<a href="https://auto-worker.com/blog/?p=609" target="_blank">こちらのページ</a>
+
 がわかりやすいかもしれません。
